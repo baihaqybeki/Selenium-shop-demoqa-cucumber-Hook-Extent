@@ -18,23 +18,19 @@ import io.cucumber.java.en.When;
 public class TestLogin {
 	
 	public static WebDriver driver;
-	private Login login;
+	private Login login = new Login();
 	
-	@Before
-	public void setup() {
-		DriverSingleton.getInstance(Constants.Chrome);
-		login = new Login();
-		
+	public TestLogin() {
+		driver = Hook.driver;
 	}
 	
-	@Given("^user navigate to login page$")
-	public void navigate_login() {
-		driver = DriverSingleton.getDriver();
+	@When("^user navigate login page$")
+	public void navigate() {
 		driver.get(Constants.loginUrl);
 	}
 	
-	@When("^user enter \"([^\"]*)\" as username & \"([^\"]*)\" as password$")
-	public void seacrh(String username,String password) {
+	@And("^user enter \"([^\"]*)\" as username & \"([^\"]*)\" as password$")
+	public void search(String username,String password) {
 		login.fillField(username,password);
 	}
 	
@@ -54,11 +50,6 @@ public class TestLogin {
 		}
 	}
 	
-	@After
-	public void closeBrowser() {
-		delay(1);
-		DriverSingleton.closeObjectInstance();
-	}
 	
 	static void delay(int seconds) {
 		try {

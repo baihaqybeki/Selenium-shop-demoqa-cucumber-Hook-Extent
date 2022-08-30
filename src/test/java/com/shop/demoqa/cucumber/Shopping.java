@@ -19,24 +19,20 @@ import io.cucumber.java.en.When;
 public class Shopping {
 	
 	public static WebDriver driver;
-	private Search search;
-	private PlaceOrder placeOrder;
+	private Search search = new Search();
+	private PlaceOrder placeOrder = new PlaceOrder();
 	
-	@Before
-	public void setup() {
-		DriverSingleton.getInstance(Constants.Chrome);
-		search = new Search();
-		placeOrder = new PlaceOrder();
-		
+	
+	public Shopping() {
+		driver = Hook.driver;
 	}
 	
-	@Given("^user navigate to web page$")
-	public void navigate_login() {
-		driver = DriverSingleton.getDriver();
-		driver.get(Constants.url);
+	@When("^user navigate web page$")
+	public void navigate() {
+		driver.get(Constants.loginUrl);
 	}
 	
-	@When("^search \"([^\"]*)\" item")
+	@And("^search \"([^\"]*)\" item")
 	public void search(String item) {
 		search.searchItem(item);
 	}
@@ -47,7 +43,7 @@ public class Shopping {
 		placeOrder.checkOut();
 	}
 	
-	@When("^user filling billing detail$")
+	@And("^user filling billing detail$")
 	public void inputBillingDetail() {
 		placeOrder.billingDetails();
 		placeOrder.terms();

@@ -50,6 +50,9 @@ public class PlaceOrder {
 	@FindBy(xpath = "//span[@aria-label='State']//span[@role='presentation']")
 	private WebElement dropdownCountry;
 	
+	@FindBy(xpath="//*[@id=\"select2-billing_country-results\"]")
+	private WebElement countryResult;
+	
 	@FindBy(xpath = "//input[@role='combobox']")
 	private WebElement inputCountry;
 	
@@ -62,6 +65,9 @@ public class PlaceOrder {
 	
 	@FindBy(xpath="//span[@aria-label='Province']//span[@role='presentation']")
 	private WebElement dropdownProvince;
+	
+	@FindBy(xpath="//*[@id=\"select2-billing_state-results\"]")
+	private WebElement provinceResult;
 	
 	@FindBy(xpath = "//input[@role='combobox']")
 	private WebElement inputProvince;
@@ -116,10 +122,14 @@ public class PlaceOrder {
 		js.executeScript("window.scrollBy(0,650)");
 		dropdownCountry.click();
 		this.inputCountry.sendKeys("Indonesia",Keys.ENTER);
+		delay(2);
+		countryResult.click();
 		this.address.sendKeys("Jakarta");
 		this.city.sendKeys("Jakarta Barat");
 		dropdownProvince.click();
 		this.inputProvince.sendKeys("Dki Jakarta",Keys.ENTER);
+		delay(2);
+		provinceResult.click();
 		this.zip.sendKeys("14701");
 		this.phone.sendKeys("080989999");
 		this.email.sendKeys("testing98@mail.com");
