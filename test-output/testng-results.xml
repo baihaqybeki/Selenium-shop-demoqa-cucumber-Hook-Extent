@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-28T22:38:48 WIB" name="Default suite" finished-at="2022-08-28T22:39:38 WIB" duration-ms="49915">
+  <suite started-at="2022-08-29T13:49:09 WIB" name="Default suite" finished-at="2022-08-29T13:51:30 WIB" duration-ms="141390">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-08-28T22:38:48 WIB" name="Default test" finished-at="2022-08-28T22:39:38 WIB" duration-ms="49915">
+    <test started-at="2022-08-29T13:49:09 WIB" name="Default test" finished-at="2022-08-29T13:51:30 WIB" duration-ms="141390">
       <class name="com.shop.demoqa.cucumber.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" started-at="2022-08-28T22:38:48 WIB" name="setUpClass" finished-at="2022-08-28T22:38:49 WIB" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" started-at="2022-08-29T13:49:09 WIB" name="setUpClass" finished-at="2022-08-29T13:49:09 WIB" duration-ms="318" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@423a0e1d]]>
+                <![CDATA[org.testng.TestRunner@32f32623]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" started-at="2022-08-28T22:38:49 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-28T22:38:58 WIB" duration-ms="9239" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" started-at="2022-08-29T13:49:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-29T13:49:22 WIB" duration-ms="13127" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" started-at="2022-08-28T22:38:58 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-28T22:39:07 WIB" duration-ms="9454" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" started-at="2022-08-29T13:49:22 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-29T13:49:33 WIB" duration-ms="10387" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" started-at="2022-08-28T22:39:07 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-28T22:39:38 WIB" duration-ms="30936" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" started-at="2022-08-29T13:49:33 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-29T13:51:30 WIB" duration-ms="117511" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -68,22 +68,22 @@
           </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <span class="select2-selection__arrow" role="presentation">...</span> is not clickable at point (814, 9). Other element would receive the click: <div class="noo-container">...</div>
+              <![CDATA[element click intercepted: Element <span class="select2-selection__arrow" role="presentation">...</span> is not clickable at point (766, 13). Other element would receive the click: <div class="noo-container">...</div>
   (Session info: chrome=104.0.5112.101)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Muhammads-MacBook-Air.local', ip: '2001:448a:2002:bb4:4c92:708c:911:6af0%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.2'
+System info: host: 'Muhammads-MacBook-Air.local', ip: '2001:448a:2061:61cc:5462:5074:cb45:cd5e%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/9_/2vjr42hx0_1...}, goog:chromeOptions: {debuggerAddress: localhost:62803}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 66ef697f75478e8bb9b0fe7382f00ce3]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/9_/2vjr42hx0_1...}, goog:chromeOptions: {debuggerAddress: localhost:62213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 21faf820213d6ef6fbc46a056944240e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="select2-selection__arrow" role="presentation">...</span> is not clickable at point (814, 9). Other element would receive the click: <div class="noo-container">...</div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="select2-selection__arrow" role="presentation">...</span> is not clickable at point (766, 13). Other element would receive the click: <div class="noo-container">...</div>
   (Session info: chrome=104.0.5112.101)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Muhammads-MacBook-Air.local', ip: '2001:448a:2002:bb4:4c92:708c:911:6af0%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.2'
+System info: host: 'Muhammads-MacBook-Air.local', ip: '2001:448a:2061:61cc:5462:5074:cb45:cd5e%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/9_/2vjr42hx0_1...}, goog:chromeOptions: {debuggerAddress: localhost:62803}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 66ef697f75478e8bb9b0fe7382f00ce3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/9_/2vjr42hx0_1...}, goog:chromeOptions: {debuggerAddress: localhost:62213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 21faf820213d6ef6fbc46a056944240e
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -112,7 +112,7 @@ at ✽.user filling billing detail(file:///Users/muhammadbaihaqy/eclipse-workspa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" started-at="2022-08-28T22:39:38 WIB" name="tearDownClass" finished-at="2022-08-28T22:39:38 WIB" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.shop.demoqa.cucumber.TestRunner@771a660]" started-at="2022-08-29T13:51:30 WIB" name="tearDownClass" finished-at="2022-08-29T13:51:30 WIB" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

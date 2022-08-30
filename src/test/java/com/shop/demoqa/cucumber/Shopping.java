@@ -33,7 +33,7 @@ public class Shopping {
 	@Given("^user navigate to web page$")
 	public void navigate_login() {
 		driver = DriverSingleton.getDriver();
-		driver.get(Constants.loginUrl);
+		driver.get(Constants.url);
 	}
 	
 	@When("^search \"([^\"]*)\" item")
