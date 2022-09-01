@@ -47,7 +47,7 @@ public class PlaceOrder {
 	@FindBy(id= "billing_last_name")
 	private WebElement lastName;
 	
-	@FindBy(xpath = "//span[@aria-label='State']//span[@role='presentation']")
+	@FindBy(xpath = "//*[@id=\"billing_country_field\"]/span/span/span[1]/span/span[2]")
 	private WebElement dropdownCountry;
 	
 	@FindBy(xpath="//*[@id=\"select2-billing_country-results\"]")

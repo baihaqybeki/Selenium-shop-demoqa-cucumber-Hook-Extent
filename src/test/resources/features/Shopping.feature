@@ -1,7 +1,7 @@
 
 Feature: Place Order
 
-  Scenario: user add first item
+  Scenario: user add item
   	When user navigate web page
     And search "pink" item
     And add "pink" item
